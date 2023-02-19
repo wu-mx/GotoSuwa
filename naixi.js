@@ -3,7 +3,7 @@ function operator(objList) {
 
 	const regex = /.+\s.+\s\d+(?:\s[Premium])?/;
 
-	objList.forEach(obj = > {
+	objList.forEach(obj => {
 		if (regex.test(obj.name)) {
 			obj.name = formatName(obj.name);
 			result.push(obj);
