@@ -1,4 +1,4 @@
-function filter(objList) {
+function operator(objList) {
 	const result = [];
 
 	const regex = /.+\s.+\s\d+(?:\s[Premium])?/;
