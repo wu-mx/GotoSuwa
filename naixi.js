@@ -49,9 +49,9 @@ function formatName(name) {
 	const match = name.match(regex);
 
 	if (match) {
-		const country = countryMap[match[0].split(' ')[0]] || match[0].split(' ')[0];
+		const country = match[0].split(' ')[0];
 		const number = match[1];
-	        return `v2|${country} ${number}|MPTCP|★★★`;
+	        return `${country} v2|${countryMap[match[0].split(' ')[0]]} ${number}|MPTCP|★★★`;
 	} else {
 		return name;
 	}
