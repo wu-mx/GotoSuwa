@@ -51,7 +51,7 @@ function formatName(name) {
 	if (match) {
 		const country = match[0].split(' ')[0];
 		const number = match[1];
-	        return `${country} v2|${countryMap[match[0].split(' ')[0]]} ${number}|MPTCP|★★★`;
+	        return `${country} v2|${countryMap[match[0].slice(country.length+1,-(match[1].length+1))]} ${number}|MPTCP|★★★`;
 	} else {
 		return name;
 	}
